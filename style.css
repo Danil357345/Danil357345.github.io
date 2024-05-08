@@ -1,59 +1,105 @@
+/* General Styling */
 body {
-  font-family: "Source Sans Pro", sans-serif; /* Example font combination */
+  font-family: "Roboto", sans-serif; /* A clean and modern font */
   margin: 0;
-  padding: 20px;
-  background-color: #e0e8f0; /* Example background color */
+  padding: 0;
+  background-color: #f6f9fc; /* Soft and soothing background */
 }
 
-h1 {
-  color: #34495e; /* Example text color */
-  text-align: center;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styling */
+header {
+  background-color: #34495e; /* Rich and elegant header color */
+  color: #fff; /* White text for contrast */
+  padding: 20px 0;
+}
+
+.logo {
   font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
+/* Hero Section Styling */
+.hero-section {
+  height: 400px; /* Increased height for more impact */
+  background-image: url("hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* White text for better readability */
+}
+
+.hero-text h1 {
+  font-size: 3em; /* Larger font size for emphasis */
   margin-bottom: 10px;
 }
 
-.hero-section { /* New section for hero image/video */
-  height: 200px; /* Adjust height as needed */
-  background-image: url("hero-image.jpg"); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
+/* Main Content Styling */
+main {
+  padding: 40px 0;
 }
 
 h2 {
-  color: #34495e; /* Example text color */
+  color: #2c3e50; /* Slightly darker text color for contrast */
   text-align: center;
-  font-size: 1.5em;
-  margin-bottom: 10px;
+  font-size: 1.8em;
+  margin-bottom: 30px;
 }
 
 p {
-  text-indent: 0px; /* Remove text indent */
-  line-height: 1.5;
-  text-align: left; /* Align left for better readability */
-}
-
-a {
-  color: #007bff; /* Example link color */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-nav {
-  display: flex; /* Horizontal navigation bar */
-  justify-content: space-around; /* Distribute links evenly */
+  font-size: 1.1em; /* Slightly larger font size for better readability */
+  line-height: 1.6;
   margin-bottom: 20px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+a {
+  color: #2980b9; /* A vibrant link color for emphasis */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-li {
+a:hover {
+  color: #1a5276; /* Darker color on hover for feedback */
+}
+
+/* Navigation Styling */
+nav {
+  background-color: #2c3e50; /* Matching header color */
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
   display: inline-block;
-  margin: 10px;
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff; /* White text for contrast */
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ecf0f1; /* Lighter color on hover for feedback */
 }
