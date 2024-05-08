@@ -1,32 +1,39 @@
-h1 {
-        color: red;
-}
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Source Sans Pro", sans-serif; /* Example font combination */
   margin: 0;
   padding: 20px;
+  background-color: #e0e8f0; /* Example background color */
 }
 
 h1 {
+  color: #34495e; /* Example text color */
   text-align: center;
   font-size: 2em;
   margin-bottom: 10px;
 }
 
+.hero-section { /* New section for hero image/video */
+  height: 200px; /* Adjust height as needed */
+  background-image: url("hero-image.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+}
+
 h2 {
+  color: #34495e; /* Example text color */
   text-align: center;
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
 p {
-  text-indent: 20px;
+  text-indent: 0px; /* Remove text indent */
   line-height: 1.5;
-  text-align: center;
+  text-align: left; /* Align left for better readability */
 }
 
 a {
-  color: #0095ff;
+  color: #007bff; /* Example link color */
   text-decoration: none;
 }
 
@@ -34,11 +41,16 @@ a:hover {
   text-decoration: underline;
 }
 
+nav {
+  display: flex; /* Horizontal navigation bar */
+  justify-content: space-around; /* Distribute links evenly */
+  margin-bottom: 20px;
+}
+
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
 }
 
 li {
