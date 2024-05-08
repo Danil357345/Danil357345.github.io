@@ -5,7 +5,7 @@ function insertCommonLinks() {
 
   // Define your links as objects with text and href properties
   const links = [
-    { text: "Ilya's page", url: "https://gulkily.github.io" },
+    { text: "Ilya's page", href: "https://gulkily.github.io" },
     { text: "Dima's page", href: "https://sirni4ek.github.io" },
     { text: "Solimia's page", href: "https://solomiia2098.github.io" },
     // Add more links as needed
