@@ -27,24 +27,3 @@ function createCommonLinks() {
 
 // Call the function after DOM is loaded
 window.addEventListener("DOMContentLoaded", createCommonLinks);
-
-// Add CSS to style the container (optional)
-// You can place this within a `<style>` tag in your HTML
-.common-links {
-  display: flex; // Arrange links horizontally
-  justify-content: space-between; // Distribute links evenly
-  margin: 1rem auto; // Add some margin
-  padding: 0.5rem;
-  border-radius: 5px; // Rounded corners
-  background-color: #eee; // Light background
-}
-
-.common-links a {
-  text-decoration: none; // Remove underline
-  font-weight: bold; // Bold text
-  transition: color 0.2s ease-in-out; // Smooth color transition on hover
-}
-
-.common-links a:hover {
-  color: #999; // Change color on hover
-}
