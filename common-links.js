@@ -1,31 +1,28 @@
-function insertCommonLinks() {
-  // Create the container element (optional)
+function createCommonLinks() {
+  // Create container with class for styling
   const linkContainer = document.createElement("nav");
-  linkContainer.classList.add("common-links"); // Add a class for styling
+  linkContainer.classList.add("common-links");
 
-  // Define your links as objects with text and href properties
+  // Define links as an array of objects for easier management
   const links = [
     { text: "Ilya's page", href: "https://gulkily.github.io" },
     { text: "Dima's page", href: "https://sirni4ek.github.io" },
     { text: "Solimia's page", href: "https://solomiia2098.github.io" },
-    // Add more links as needed
+    // Add more links with the same object structure
   ];
 
-  // Loop through links and create anchor elements
-  for (const link of links) {
+  // Create and append links using a more concise approach with destructuring
+  links.forEach((link) => {
+    const { text, href } = link; // Destructure text and href properties
     const anchor = document.createElement("a");
-    anchor.textContent = link.text;
-    anchor.href = link.href;
-
-    // Optionally add target="_blank" for opening links in a new tab
-    // anchor.target = "_blank";
-
+    anchor.textContent = text;
+    anchor.href = href;
     linkContainer.appendChild(anchor);
-  }
+  });
 
-  // Append the container to the body (or desired location)
+  // Append container to the body (or desired location if needed)
   document.body.appendChild(linkContainer);
 }
 
-// Call the function after the DOM is loaded (ensures elements exist)
-window.addEventListener("DOMContentLoaded", insertCommonLinks);
+// Call the function after DOM is loaded
+window.addEventListener("DOMContentLoaded", createCommonLinks);
