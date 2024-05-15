@@ -57,3 +57,21 @@ li {
   display: inline-block;
   margin: 10px;
 }
+.common-links {
+  display: flex; // Arrange links horizontally
+  justify-content: space-between; // Distribute links evenly
+  margin: 1rem auto; // Add some margin
+  padding: 0.5rem;
+  border-radius: 5px; // Rounded corners
+  background-color: #eee; // Light background
+}
+
+.common-links a {
+  text-decoration: none; // Remove underline
+  font-weight: bold; // Bold text
+  transition: color 0.2s ease-in-out; // Smooth color transition on hover
+}
+
+.common-links a:hover {
+  color: #999; // Change color on hover
+}
