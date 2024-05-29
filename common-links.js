@@ -1,31 +1,29 @@
-function insertCommonLinks() {
-  // Create the container element (optional)
+function createCommonLinks() {
+  // Create container with class for styling
   const linkContainer = document.createElement("nav");
-  linkContainer.classList.add("common-links"); // Add a class for styling
+  linkContainer.classList.add("common-links");
 
-  // Define your links as objects with text and href properties
+  // Define links as an array of objects
   const links = [
-    { text: "Ilya's page", url: "https://gulkily.github.io" },
-    { text: "Dima's page", href: "https://sirni4ek.github.io" },
-    { text: "Solimia's page", href: "https://solomiia2098.github.io" },
-    // Add more links as needed
+    { text: "Ilya's page", href: "https://gulkily.github.io", color: "#007bff" }, // Blue
+    { text: "Dima's page", href: "https://sirni4ek.github.io", color: "#ffc107" }, // Orange
+    { text: "Solimia's page", href: "https://solomiia2098.github.io", color: "#28a745" }, // Green
+    // Add more links with text, href, and optional color property
   ];
 
-  // Loop through links and create anchor elements
-  for (const link of links) {
+  // Create and style links using destructuring
+  links.forEach((link) => {
+    const { text, href, color = "#000" } = link; // Destructure with default color
     const anchor = document.createElement("a");
-    anchor.textContent = link.text;
-    anchor.href = link.href;
-
-    // Optionally add target="_blank" for opening links in a new tab
-    // anchor.target = "_blank";
-
+    anchor.textContent = text;
+    anchor.href = href;
+    anchor.style.color = color; // Set anchor color
     linkContainer.appendChild(anchor);
-  }
+  });
 
-  // Append the container to the body (or desired location)
+  // Append container to the body
   document.body.appendChild(linkContainer);
 }
 
-// Call the function after the DOM is loaded (ensures elements exist)
-window.addEventListener("DOMContentLoaded", insertCommonLinks);
+// Call the function after DOM is loaded
+window.addEventListener("DOMContentLoaded", createCommonLinks);
