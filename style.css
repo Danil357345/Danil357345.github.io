@@ -1,37 +1,46 @@
 /* General Styling */
 body {
-  font-family: "Roboto", sans-serif; /* A clean and modern font */
+  font-family: "Courier New", Courier, monospace; /* Bold and classic font */
   margin: 0;
   padding: 0;
-  background-color: #f6f9fc; /* Soft and soothing background */
+  background-color: #1e1e1e; /* Dark and moody background */
+  color: #eaeaea; /* Light text for contrast */
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
+  background-color: #333; /* Dark background for the container */
+  border-radius: 10px; /* Soft rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Deep shadow for depth */
 }
 
 /* Header Styling */
 header {
-  background-color: #34495e; /* Rich and elegant header color */
-  color: #fff; /* White text for contrast */
-  padding: 20px 0;
+  background-color: #ff4757; /* Vibrant and bold header color */
+  color: #000; /* Black text for a striking contrast */
+  padding: 40px 0;
+  border-bottom: 5px solid #ffa502; /* Bottom border for emphasis */
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;
   margin: 0;
+  font-family: "Impact", sans-serif; /* Strong and impactful font */
+  text-shadow: 3px 3px 0px #ffa502; /* 3D effect for the text */
 }
 
 /* Hero Section Styling */
 .hero-section {
-  height: 400px; /* Increased height for more impact */
+  height: 500px; /* Taller height for more impact */
   background-image: url("hero-image.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
+  filter: grayscale(50%); /* Add a grayscale filter for a dramatic effect */
+  border: 8px solid #ffa502; /* Thick border for emphasis */
 }
 
 .hero-text {
@@ -40,58 +49,76 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff; /* White text for better readability */
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .hero-text h1 {
-  font-size: 3em; /* Larger font size for emphasis */
-  margin-bottom: 10px;
+  font-size: 4em; /* Even larger font size for greater emphasis */
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Uppercase for a strong statement */
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Main Content Styling */
 main {
-  padding: 40px 0;
+  padding: 60px 0;
+  background-color: #444; /* Darker background for contrast */
+  border-radius: 10px;
 }
 
 h2 {
-  color: #2c3e50; /* Slightly darker text color for contrast */
+  color: #ffa502; /* Bright and vibrant heading color */
   text-align: center;
-  font-size: 1.8em;
-  margin-bottom: 30px;
+  font-size: 2.2em;
+  margin-bottom: 40px;
+  text-transform: uppercase; /* Uppercase for emphasis */
 }
 
 p {
-  font-size: 1.1em; /* Slightly larger font size for better readability */
-  line-height: 1.6;
-  margin-bottom: 20px;
+  font-size: 1.2em; /* Slightly larger font size for readability */
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #ddd; /* Light gray text for subtle contrast */
 }
 
 a {
-  color: #2980b9; /* A vibrant link color for emphasis */
-  text-decoration: none;
-  transition: color 0.3s ease;
+  color: #ff6b81; /* Bold and vibrant link color */
+  text-decoration: underline; /* Underline for emphasis */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  color: #1a5276; /* Darker color on hover for feedback */
+  color: #ff4757; /* Darker color on hover */
+  text-shadow: 1px 1px 5px #ffa502; /* Shadow effect on hover */
 }
 
 /* Common Links Styling */
 .common-links {
-  display: flex; /* Arrange links horizontally */
-  justify-content: space-between; /* Distribute links evenly */
-  margin: 1rem auto; /* Add some margin */
-  padding: 0.5rem;
-  border-radius: 5px; /* Rounded corners */
-  background-color: #eee; /* Light background */
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #555; /* Dark background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
 }
 
 .common-links a {
-  text-decoration: none; /* Remove underline */
-  font-weight: bold; /* Bold text */
-  transition: color 0.2s ease-in-out; /* Smooth color transition on hover */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em; /* Larger font size */
+  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth color and transform transition on hover */
 }
 
 .common-links a:hover {
-  color: #999; /* Change color on hover */
+  color: #ff6b81; /* Change color on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
 }
