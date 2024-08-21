@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-  font-family: "Courier New", Courier, monospace; /* Bold and classic font */
+  font-family: "Courier New", Courier, monospace;
   margin: 0;
   padding: 0;
   background-color: #1e1e1e; /* Dark and moody background */
@@ -18,10 +18,10 @@ body {
 
 /* Header Styling */
 header {
-  background-color: #ff4757; /* Vibrant and bold header color */
+  background-color: #ff4757; /* Vibrant and bold red header color */
   color: #000; /* Black text for a striking contrast */
   padding: 40px 0;
-  border-bottom: 5px solid #ffa502; /* Bottom border for emphasis */
+  border-bottom: 5px solid #ffa502; /* Yellow bottom border for emphasis */
 }
 
 .logo {
@@ -29,7 +29,7 @@ header {
   text-align: center;
   margin: 0;
   font-family: "Impact", sans-serif; /* Strong and impactful font */
-  text-shadow: 3px 3px 0px #ffa502; /* 3D effect for the text */
+  text-shadow: 3px 3px 0px #ffa502; /* 3D yellow shadow for the text */
 }
 
 nav ul.main-nav {
@@ -52,18 +52,18 @@ nav ul.main-nav li a {
 }
 
 nav ul.main-nav li a:hover {
-  color: #ffa502; /* Hover color matches the header border */
+  color: #ffa502; /* Yellow hover color matches the header border */
 }
 
 /* Hero Section Styling */
 .hero-section {
-  height: 500px; /* Taller height for more impact */
+  height: 500px;
   background-image: url("hero-image.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
-  filter: grayscale(50%); /* Add a grayscale filter for a dramatic effect */
-  border: 8px solid #ffa502; /* Thick border for emphasis */
+  filter: grayscale(50%);
+  border: 8px solid #ffa502; /* Yellow thick border for emphasis */
 }
 
 .hero-text {
@@ -73,16 +73,16 @@ nav ul.main-nav li a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 10px;
 }
 
 .hero-text h1 {
-  font-size: 4em; /* Even larger font size for greater emphasis */
+  font-size: 4em;
   margin-bottom: 20px;
-  text-transform: uppercase; /* Uppercase for a strong statement */
-  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+  text-transform: uppercase;
+  animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -98,40 +98,40 @@ main {
 }
 
 h2 {
-  color: #ffa502; /* Bright and vibrant heading color */
+  color: #ffa502; /* Bright yellow heading color */
   text-align: center;
   font-size: 2.2em;
   margin-bottom: 40px;
-  text-transform: uppercase; /* Uppercase for emphasis */
+  text-transform: uppercase;
 }
 
 p {
-  font-size: 1.2em; /* Slightly larger font size for readability */
+  font-size: 1.2em;
   line-height: 1.8;
   margin-bottom: 30px;
   color: #ddd; /* Light gray text for subtle contrast */
 }
 
 a {
-  color: #ff6b81; /* Bold and vibrant link color */
-  text-decoration: underline; /* Underline for emphasis */
+  color: #ff6b81; /* Bold and vibrant pink link color */
+  text-decoration: underline;
   transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-  color: #ff4757; /* Darker color on hover */
-  text-shadow: 1px 1px 5px #ffa502; /* Shadow effect on hover */
+  color: #ff4757; /* Darker red color on hover */
+  text-shadow: 1px 1px 5px #ffa502; /* Yellow shadow effect on hover */
 }
 
 /* Section Styling */
 section {
-  margin-bottom: 60px; /* Add space between sections */
+  margin-bottom: 60px;
 }
 
 section h3 {
   color: #ffa502; /* Match the color with h2 headings */
   font-size: 1.8em;
-  text-transform: uppercase; /* Uppercase for consistency */
+  text-transform: uppercase;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -154,14 +154,16 @@ section a:hover {
   background-color: #555; /* Slightly different background for distinction */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
-  text-align: center; /* Center align the text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#github h2 {
+  color: #ffa502; /* Yellow for a vibrant heading */
 }
 
 #github p {
-  font-size: 1.2em; /* Match the paragraph font size */
   color: #ddd;
-  margin-bottom: 20px;
 }
 
 #github a {
@@ -170,14 +172,14 @@ section a:hover {
   font-weight: bold;
   text-decoration: none;
   padding: 10px 20px;
-  border: 2px solid #ffa502; /* Border to match the GitHub section */
+  border: 2px solid #ffa502; /* Yellow border */
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #github a:hover {
   background-color: #ffa502;
-  color: #000;
+  color: #000; /* Black text on yellow background */
 }
 
 /* Footer Styling */
@@ -204,11 +206,11 @@ footer .project-links li {
 }
 
 footer .project-links a {
-  color: #ff6b81;
+  color: #ff6b81; /* Bold link color */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 footer .project-links a:hover {
-  color: #ffa502;
+  color: #ffa502; /* Yellow color on hover */
 }
