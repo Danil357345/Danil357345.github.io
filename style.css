@@ -32,6 +32,29 @@ header {
   text-shadow: 3px 3px 0px #ffa502; /* 3D effect for the text */
 }
 
+nav ul.main-nav {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul.main-nav li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul.main-nav li a {
+  color: #000; /* Black text */
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav ul.main-nav li a:hover {
+  color: #ffa502; /* Hover color matches the header border */
+}
+
 /* Hero Section Styling */
 .hero-section {
   height: 500px; /* Taller height for more impact */
@@ -100,25 +123,92 @@ a:hover {
   text-shadow: 1px 1px 5px #ffa502; /* Shadow effect on hover */
 }
 
-/* Common Links Styling */
-.common-links {
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem auto;
-  padding: 1rem;
-  border-radius: 10px;
-  background-color: #555; /* Dark background */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+/* Section Styling */
+section {
+  margin-bottom: 60px; /* Add space between sections */
 }
 
-.common-links a {
+section h3 {
+  color: #ffa502; /* Match the color with h2 headings */
+  font-size: 1.8em;
+  text-transform: uppercase; /* Uppercase for consistency */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #ff6b81;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2em; /* Larger font size */
-  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out; /* Smooth color and transform transition on hover */
+  transition: color 0.3s ease;
 }
 
-.common-links a:hover {
-  color: #ff6b81; /* Change color on hover */
-  transform: scale(1.1); /* Slight zoom effect on hover */
+section a:hover {
+  color: #ff4757;
+}
+
+/* GitHub Section Styling */
+#github {
+  background-color: #555; /* Slightly different background for distinction */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+  text-align: center; /* Center align the text */
+}
+
+#github p {
+  font-size: 1.2em; /* Match the paragraph font size */
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+#github a {
+  display: inline-block;
+  color: #ffa502;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 2px solid #ffa502; /* Border to match the GitHub section */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#github a:hover {
+  background-color: #ffa502;
+  color: #000;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333; /* Dark background to match the container */
+  color: #eaeaea;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0;
+  color: #ddd;
+}
+
+footer .project-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+footer .project-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+footer .project-links a {
+  color: #ff6b81;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer .project-links a:hover {
+  color: #ffa502;
 }
