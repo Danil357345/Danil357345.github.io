@@ -1,3 +1,7 @@
+---
+layout: default
+title: Terminology
+---
 <!DOCTYPE html>
 <html>
   <head>
