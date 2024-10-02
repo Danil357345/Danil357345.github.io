@@ -1,3 +1,7 @@
+---
+layout: default
+title: Github-Pages
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
