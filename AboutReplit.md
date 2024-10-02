@@ -1,3 +1,7 @@
+---
+layout: default
+title: AboutReplit
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
