@@ -1,3 +1,7 @@
+---
+layout: default
+title: FizzBuzz
+---
 <!DOCTYPE html>
 <html>
   <head>
