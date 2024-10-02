@@ -1,3 +1,7 @@
+---
+layout: default
+title: XcodeIDE
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
