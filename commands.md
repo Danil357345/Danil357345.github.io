@@ -1,3 +1,7 @@
+---
+layout: default
+title: Commands
+---
 <!DOCTYPE html>
 <html>
   <head>
